@@ -1,13 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
-import TimerApp from "./Timer/TimerApp";
 
 function App() {
-  return (
-    <div className="App">
-      <TimerApp />
-    </div>
-  );
+  return <div className="App">Nothing happens here...</div>;
 }
 
 export default App;

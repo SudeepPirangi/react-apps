@@ -100,7 +100,7 @@ const TimerApp = () => {
   };
   
   return (
-    <div className="container">
+    <div className="timer-container">
       <h1 className='header'>Timer</h1>
       <div className='divider'></div>
 

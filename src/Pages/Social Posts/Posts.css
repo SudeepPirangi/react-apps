@@ -1,0 +1,130 @@
+:root {
+  --white: #fff;
+  --blue: #0c5592;
+  --radius: 4px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 12px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+button:hover,
+button:active,
+button.active {
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+}
+
+.posts-list {
+  width: 60%;
+  background-color: aliceblue;
+}
+.posts-list > h1 {
+  color: var(--blue);
+}
+
+.all-posts {
+  padding: 0 15%;
+}
+
+.page-size {
+  text-align: right;
+  margin: 15px 0;
+}
+.page-size > select {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.posts > .post {
+  border: 1px solid #0c5592;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.posts > .post p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+button,
+.posts > .post:hover {
+  cursor: pointer;
+}
+
+.more-info {
+  width: 40%;
+  color: var(--white);
+  background-color: var(--blue);
+  box-shadow: 2px 6px 5px 3px var(--blue);
+  padding: 15px;
+}
+
+.compute-time {
+  padding: 20px 0 15px;
+}
+.compute-time > h3 {
+  padding: 20px;
+}
+.compute-time > h3,
+.post-details {
+  border: 2px solid var(--white);
+  border-radius: var(--radius);
+  line-height: 25px;
+}
+
+.post-details h3 {
+  margin: 0;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.post-details .body {
+  background-color: var(--white);
+  margin: 0;
+  color: var(--blue);
+  padding: 15px;
+  text-align: left;
+}
